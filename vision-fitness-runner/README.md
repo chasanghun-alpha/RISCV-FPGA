@@ -5,11 +5,11 @@
 **사용 도구**: Verilog HDL, Intel Quartus (DE2 FPGA), HuskyLens AI Vision Sensor, Raspberry Pi 5 (Python, pyserial, Flask, HTML Canvas), ChatGPT/Codex (설계 보조)
 
 ## 개요
-사용자의 신체 움직임을 게임 입력으로 바꾸는 임베디드 피트니스 시스템입니다.
-1. HuskyLens가 얼굴 좌표를 인식합니다.
-2. FPGA 로직이 좌표를 수신·파싱합니다.
-3. FPGA 내부의 RISC-V soft processor가 MMIO로 좌표를 읽어 게임 프레임을 만듭니다.
-4. Raspberry Pi 웹 게임이 캐릭터의 좌우 이동과 점프로 반영합니다.
+사용자의 신체 움직임을 게임 입력으로 변환하는 임베디드 피트니스 시스템
+1. HuskyLens가 얼굴 좌표 인식
+2. FPGA 로직이 좌표 수신·파싱
+3. FPGA 내부의 RISC-V soft processor가 MMIO로 좌표를 읽어 게임 프레임 생성
+4. Raspberry Pi 웹 게임이 캐릭터의 좌우 이동과 점프로 반영
 
 ## 문제 정의
 - HuskyLens ↔ FPGA UART 통신으로 사람 위치 데이터 수신
@@ -79,8 +79,8 @@ Stop     : [0xFE]['S']['T']['P']  (KEY[2])
   - `jump_events` 누적 카운터로 짧은 점프 프레임 누락 해결
 
 ## 배운 점 / 의의
-- 센서 입력부터 웹 출력까지 이어지는 end-to-end 시스템에서는 UART frame format, MMIO address map, GPIO pin, action encoding 같은 **팀원 간 인터페이스 정의**가 통합 성공의 핵심이었습니다.
-- AI Agent를 코드 생성뿐 아니라 요구사항 프롬프트 설계와 디버깅 정리에 활용했습니다. 결과는 Quartus 컴파일, 실제 UART 출력, 웹 화면으로 직접 검증했습니다.
+- 센서 입력부터 웹 출력까지 이어지는 end-to-end 시스템에서는 UART frame format, MMIO address map, GPIO pin, action encoding 같은 **팀원 간 인터페이스 정의**가 통합 성공의 핵심
+- AI Agent를 코드 생성뿐 아니라 요구사항 프롬프트 설계와 디버깅 정리에 활용. 결과는 Quartus 컴파일, 실제 UART 출력, 웹 화면으로 직접 검증
 - 개선 방향:
   - 마커 기반 multi-object tracking
   - RISC-V GCC toolchain 기반 C 개발

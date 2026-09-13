@@ -5,7 +5,7 @@
 **사용 도구**: Verilog HDL, RISC-V ISA 설계, Synopsys Design Compiler, VCS/Verdi, Intel Quartus (FPGA), HuskyLens AI Vision Sensor, Raspberry Pi (Python / Flask)
 
 ## 개요
-RISC-V 5-stage pipeline 프로세서를 직접 설계하고 개선한 프로젝트 2개를 모았습니다.
+RISC-V 5-stage pipeline 프로세서를 직접 설계·개선한 프로젝트 2개 정리
 
 | 프로젝트 | 핵심 내용 | 주요 결과 |
 |---|---|---|
