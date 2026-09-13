@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : RISCVMULTI
+Version: W-2024.09-SP3
+Date   : Wed May 20 23:24:55 2026
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /home/dice22/lib/db_nldm/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                          277
+Number of nets:                          7351
+Number of cells:                         6925
+Number of combinational cells:           5467
+Number of sequential cells:              1457
+Number of macros/black boxes:               0
+Number of buf/inv:                        648
+Number of references:                      47
+
+Combinational area:              13554.516174
+Buf/Inv area:                     1830.090990
+Noncombinational area:            9866.124497
+Macro/Black Box area:                0.000000
+Net Interconnect area:            9000.778476
+
+Total cell area:                 23420.640671
+Total area:                      32421.419147
+1
