@@ -4,6 +4,8 @@
 **기간**: [추가 정보 필요]
 **사용 도구**: Verilog HDL, Synopsys Design Compiler (SAED32 HVT), VCS/Verdi, Python (assembler)
 
+📄 보고서: [docs/RISCV_8x8_GEMM_Report.pdf](docs/RISCV_8x8_GEMM_Report.pdf) · 발표자료: [docs/RISCV_8x8_GEMM_Presentation.pdf](docs/RISCV_8x8_GEMM_Presentation.pdf)
+
 ## 개요
 8×8 GEMM(General Matrix Multiplication, C = A×B)을 효율적으로 수행하도록 RISC-V 프로세서 개선
 Datapath/control path와 assembly code를 함께 최적화하고, 설계 단계별 PPA(Performance, Power, Area) 분석

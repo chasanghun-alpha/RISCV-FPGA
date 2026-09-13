@@ -16,9 +16,10 @@ RISC-V 5-stage pipeline 프로세서를 직접 설계·개선한 프로젝트 2�
 ```
 RISCV-FPGA/
 ├── gemm-accelerator/
-│   ├── docs/images/ # 시뮬레이션 결과 이미지
+│   ├── docs/        # 보고서, 발표자료 PDF, 시뮬레이션 결과 이미지
 │   └── src/
 │       ├── rtl/     # RISC-V core RTL, TOP_GEMM wrapper, testbench, assembly, assembler
 │       └── syn/     # Design Compiler area/power report, SDC
-└── vision-fitness-runner/  # README (설계·결과 정리)
+└── vision-fitness-runner/
+    └── docs/        # 최종 보고서 PDF
 ```

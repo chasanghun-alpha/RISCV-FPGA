@@ -4,6 +4,8 @@
 **기간**: [추가 정보 필요]
 **사용 도구**: Verilog HDL, Intel Quartus (DE2 FPGA), HuskyLens AI Vision Sensor, Raspberry Pi 5 (Python, pyserial, Flask, HTML Canvas), ChatGPT/Codex (설계 보조)
 
+📄 원본 보고서: [docs/FPGA_Fitness_Runner_Report.pdf](docs/FPGA_Fitness_Runner_Report.pdf)
+
 ## 개요
 사용자의 신체 움직임을 게임 입력으로 변환하는 임베디드 피트니스 시스템
 1. HuskyLens가 얼굴 좌표 인식
